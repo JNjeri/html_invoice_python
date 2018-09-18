@@ -1,0 +1,30 @@
+{%extends 'layout.html'%}
+
+{% block content%}
+<form class= ""  action="{{url_for('generate')}}" method = "POST">
+
+  <div class="form-group">
+    <label for="title">Email</label>
+    <input type="text" class="form-control"   placeholder="client Email" name= "user_email">
+      
+  
+  <div class="form-group">
+    <label for="title">Design Fee</label>
+    <input type="text" class="form-control"   placeholder="Design Fee" name= "design_fee" value="">
+      
+  </div>
+  <div class="form-group">
+    <label for="title">Hosting Fee</label>
+    <input type="text" class="form-control"   placeholder="Hosting Fee" name= "hosting_fee" value="">      
+  </div>
+
+  <div class="form-group">
+    <label for="title">Domain Fee</label>
+    <input type="text" class="form-control"   placeholder="Domain Fee" name= "domain_fee" value="">      
+  </div>
+  
+  <button type="submit" name= "button">Generate</button>
+
+</form>
+ 
+{% endblock %}
